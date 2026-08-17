@@ -1,1 +1,1 @@
-# GTP-Pictures
+# GPT-Images
