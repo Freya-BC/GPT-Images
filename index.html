@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPT-Images</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #12100e;
+      --panel: #1c1916;
+      --text: #f3ece3;
+      --muted: #b8aea2;
+      --accent: #d4a574;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      padding: 2.5rem 1.5rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 0.4rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.9em;
+      color: var(--accent);
+      word-break: break-all;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    figure {
+      margin: 0;
+      background: var(--panel);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      background: #000;
+    }
+    figcaption {
+      padding: 0.9rem 1rem 1.1rem;
+    }
+    figcaption strong {
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+    button {
+      margin-top: 0.7rem;
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      padding: 0.35rem 0.8rem;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.9rem;
+    }
+    button:hover { background: rgba(212, 165, 116, 0.15); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GPT-Images</h1>
+    <p>Folkvangr backgrounds hosted on GitHub Pages. Use the <code>github.io</code> URL for faster loading than raw GitHub.</p>
+  </header>
+  <main class="grid" id="gallery"></main>
+  <script>
+    const images = [
+      ["Folkvangr-Saal.png", "Saal"],
+      ["Folkvangr_Essen.png", "Essen"],
+      ["Folkvangr_Gang1.webp", "Gang 1"],
+      ["Folkvangr_Kueche.png", "Kueche"],
+      ["Folkvangr_LivingRoom.png", "Living room"],
+      ["Folkvangr_Punish.png", "Punish"],
+      ["Folkvangr_Quelle.png", "Quelle"],
+      ["Folkvangr_Sleeping.png", "Sleeping"],
+      ["Folkvangr_Temple_inside.png", "Temple inside"],
+      ["Folkvangr_out_front.png", "Out front"]
+    ];
+    const base = new URL(".", location.href).href;
+    const gallery = document.getElementById("gallery");
+    for (const [file, label] of images) {
+      const url = new URL(file, base).href;
+      const figure = document.createElement("figure");
+      figure.innerHTML = `
+        <img src="${file}" alt="${label}" loading="lazy" decoding="async">
+        <figcaption>
+          <strong>${label}</strong>
+          <code>${url}</code>
+          <div><button type="button">Copy URL</button></div>
+        </figcaption>
+      `;
+      figure.querySelector("button").addEventListener("click", async () => {
+        await navigator.clipboard.writeText(url);
+        figure.querySelector("button").textContent = "Copied";
+        setTimeout(() => { figure.querySelector("button").textContent = "Copy URL"; }, 1200);
+      });
+      gallery.appendChild(figure);
+    }
+  </script>
+</body>
+</html>
