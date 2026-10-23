@@ -21,5 +21,6 @@ Double-click `Publish Images.command` after adding new images to upload them and
 | Leas-Raum | https://freya-bc.github.io/GPT-Images/Leas-Raum.webp |
 | Odd-Room | https://freya-bc.github.io/GPT-Images/Odd-Room.webp |
 | Reading-Room | https://freya-bc.github.io/GPT-Images/Reading-Room.webp |
+| Severant Quarter | https://freya-bc.github.io/GPT-Images/Severant Quarter.png |
 | Spreader-Bar | https://freya-bc.github.io/GPT-Images/Spreader-Bar.webp |
 
