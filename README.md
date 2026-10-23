@@ -8,6 +8,7 @@ Double-click `Publish Images.command` after adding new images to upload them and
 
 | Image | Pages URL |
 |---|---|
+| Folkvangr - Badehalle | https://freya-bc.github.io/GPT-Images/Folkvangr - Badehalle.png |
 | Essen | https://freya-bc.github.io/GPT-Images/Folkvangr_Essen.png |
 | Gang1 | https://freya-bc.github.io/GPT-Images/Folkvangr_Gang1.webp |
 | Kueche | https://freya-bc.github.io/GPT-Images/Folkvangr_Kueche.png |
