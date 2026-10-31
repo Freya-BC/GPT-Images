@@ -8,6 +8,7 @@ Double-click `Publish Images.command` after adding new images to upload them and
 
 | Image | Pages URL |
 |---|---|
+| Auris-Room | https://freya-bc.github.io/GPT-Images/Auris-Room.webp |
 | Folkvangr - Badehalle | https://freya-bc.github.io/GPT-Images/Folkvangr - Badehalle.png |
 | Essen | https://freya-bc.github.io/GPT-Images/Folkvangr_Essen.png |
 | Gang1 | https://freya-bc.github.io/GPT-Images/Folkvangr_Gang1.webp |
