@@ -19,6 +19,7 @@ Double-click `Publish Images.command` after adding new images to upload them and
 | Quelle | https://freya-bc.github.io/GPT-Images/Folkvangr_Quelle.png |
 | Sleeping | https://freya-bc.github.io/GPT-Images/Folkvangr_Sleeping.png |
 | Temple inside | https://freya-bc.github.io/GPT-Images/Folkvangr_Temple_inside.png |
+| punishment | https://freya-bc.github.io/GPT-Images/Folkvangr-punishment.png |
 | Saal | https://freya-bc.github.io/GPT-Images/Folkvangr-Saal.png |
 | Leas-Raum | https://freya-bc.github.io/GPT-Images/Leas-Raum.webp |
 | Odd-Room | https://freya-bc.github.io/GPT-Images/Odd-Room.webp |
